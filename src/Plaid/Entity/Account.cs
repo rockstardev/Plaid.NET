@@ -70,5 +70,8 @@ namespace Acklann.Plaid.Entity
         /// <value>The balance.</value>
         [JsonProperty("balances")]
         public Balance Balance { get; set; }
+
+        [JsonProperty("owners")]
+        public Identity[] Owners { get; set; }
     }
 }
