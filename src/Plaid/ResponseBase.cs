@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System.Net;
 
 namespace Acklann.Plaid
@@ -8,9 +8,8 @@ namespace Acklann.Plaid
     /// </summary>
     public abstract class ResponseBase
     {
-#if DEBUG
-        public string RawJsonForDebugging;
-#endif
+        public string RawJsonForDebugging { get; set; }
+
         /// <summary>
         /// The Error
         /// </summary>
